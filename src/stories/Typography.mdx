@@ -1,0 +1,147 @@
+import { Meta, Typeset } from "@storybook/blocks";
+
+<Meta name="Typography" />
+
+# Typography
+
+export const text = {
+  type: {
+    primary: '"Open Sans", sans-serif',
+  },
+  weight: {
+    regular: "400",
+    semibold: "600",
+  },
+  size: {
+    xs: 12,
+    s: 14,
+    m: 16,
+    l: 20,
+    xl: 24,
+  },
+};
+
+## Text
+
+### Regular
+
+<Typeset
+  fontSizes={[
+    Number(text.size.xs),
+    Number(text.size.s),
+    Number(text.size.m),
+    Number(text.size.l),
+    Number(text.size.xl),
+  ]}
+  fontWeight={text.weight.regular}
+  sampleText={"text/primary/regular"}
+  fontFamily={text.type.primary}
+/>
+
+### Semibold
+
+<Typeset
+  fontSizes={[
+    Number(text.size.xs),
+    Number(text.size.s),
+    Number(text.size.m),
+    Number(text.size.l),
+  ]}
+  fontWeight={text.weight.semibold}
+  sampleText={"text/primary/semibold"}
+  fontFamily={text.type.primary}
+/>
+
+## Label
+
+export const label = {
+  type: {
+    primary: '"Open Sans", sans-serif',
+  },
+  weight: {
+    regular: "400",
+    semibold: "600",
+    bold: "700",
+  },
+  size: {
+    xs: 12,
+    s: 14,
+    m: 16,
+    l: 20,
+    xl: 24,
+  },
+};
+
+### Regular
+
+<Typeset
+  fontSizes={[
+    Number(label.size.xs),
+    Number(label.size.s),
+    Number(label.size.m),
+  ]}
+  fontWeight={label.weight.regular}
+  sampleText={"label/primary/regular"}
+  fontFamily={label.type.primary}
+/>
+
+### Semibold
+
+<Typeset
+  fontSizes={[
+    Number(label.size.xs),
+    Number(label.size.s),
+    Number(label.size.m),
+  ]}
+  fontWeight={label.weight.semibold}
+  sampleText={"label/primary/semibold"}
+  fontFamily={label.type.primary}
+/>
+
+### Bold
+
+<Typeset
+  fontSizes={[
+    Number(label.size.xs),
+    Number(label.size.s),
+    Number(label.size.m),
+  ]}
+  fontWeight={label.weight.bold}
+  sampleText={"label/primary/bold"}
+  fontFamily={label.type.primary}
+/>
+
+### Heading
+
+export const heading = {
+  type: {
+    secondary: '"Gotham", sans-serif',
+  },
+  weight: {
+    bold: "700",
+  },
+  size: {
+    xs: 16,
+    s: 20,
+    m: 24,
+    l: 32,
+    xl: 40,
+    xxl: 48,
+  },
+};
+
+## Bold
+
+<Typeset
+  fontSizes={[
+    Number(heading.size.xs),
+    Number(heading.size.s),
+    Number(heading.size.m),
+    Number(heading.size.l),
+    Number(heading.size.xl),
+    Number(heading.size.xxl),
+  ]}
+  fontWeight={heading.weight.bold}
+  sampleText={"heading/secondary/bold"}
+  fontFamily={heading.type.secondary}
+/>

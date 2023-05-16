@@ -1,0 +1,81 @@
+:root {
+  --font-family-primary: 'Open Sans', sans-serif;
+  --font-family-secondary: 'Gotham', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 40px;
+  --font-size-xxxxl: 48px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-text-primary-xs-regular: var(--font-weight-regular) var(--font-size-xs) var(--font-family-primary);
+  --font-text-primary-s-regular: var(--font-weight-regular) var(--font-size-s)  var(--font-family-primary);
+  --font-text-primary-m-regular: var(--font-weight-regular) var(--font-size-m) var(--font-family-primary);
+  --font-text-primary-l-regular: var(--font-weight-regular) var(--font-size-l) var(--font-family-primary);
+  --font-text-primary-xl-regular: var(--font-weight-regular) var(--font-size-xl) var(--font-family-primary);
+
+  --font-text-primary-xs-semibold: var(--font-weight-semibold) var(--font-size-xs) var(--font-family-primary);
+  --font-text-primary-s-semibold: var(--font-weight-semibold) var(--font-size-s) var(--font-family-primary);
+  --font-text-primary-m-semibold: var(--font-weight-semibold) var(--font-size-m) var(--font-family-primary);
+  --font-text-primary-l-semibold: var(--font-weight-semibold) var(--font-size-l) var(--font-family-primary);
+
+  --font-label-primary-xs-regular: var(--font-weight-regular) var(--font-size-xs) var(--font-family-primary);
+  --font-label-primary-s-regular: var(--font-weight-regular) var(--font-size-s) var(--font-family-primary);
+  --font-label-primary-m-regular: var(--font-weight-regular) var(--font-size-m) var(--font-family-primary);
+
+  --font-label-primary-xs-semibold: var(--font-weight-semibold) var(--font-size-xs) var(--font-family-primary);
+  --font-label-primary-s-semibold: var(--font-weight-semibold) var(--font-size-s) var(--font-family-primary);
+  --font-label-primary-m-semibold: var(--font-weight-semibold) var(--font-size-m) var(--font-family-primary);
+
+  --font-label-primary-xs-bold: var(--font-size-xs) var(--font-weight-bold) var(--font-family-primary);
+  --font-label-primary-s-bold: var(--font-size-s) var(--font-weight-bold) var(--font-family-primary);
+  --font-label-primary-m-bold: var(--font-size-m) var(--font-weight-bold) var(--font-family-primary);
+
+  --font-heading-secondary-xs-bold: var(--font-weight-bold) var(--font-size-m) var(--font-family-secondary);
+  --font-heading-secondary-s-bold: var(--font-weight-bold) var(--font-size-l) var(--font-family-secondary);
+  --font-heading-secondary-m-bold: var(--font-weight-bold) var(--font-size-xl) var(--font-family-secondary);
+  --font-heading-secondary-l-bold: var(--font-weight-bold) var(--font-size-xxl) var(--font-family-secondary);
+  --font-heading-secondary-xl-bold: var(--font-weight-bold) var(--font-size-xxxl) var(--font-family-secondary);
+  --font-heading-secondary-xxl-bold: var(--font-weight-bold) var(--font-size-xxxxl) var(--font-family-secondary);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans-Regular'),
+    url('/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+    url('fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans-Semibold'),
+    url('/fonts/OpenSans/OpenSans-Semibold.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans-Bold'),
+    url('/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham-Bold'),
+    url('/fonts/Gotham/Gotham-Bold.woff2') format('woff2'),
+    url('/fonts/Gotham/Gotham-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
