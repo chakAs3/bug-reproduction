@@ -5,8 +5,7 @@ import type { Meta, StoryObj } from "@storybook/vue3";
 const meta: Meta<typeof TPDataGrid> = {
   title: 'Components/TPDataGrid',
   component: TPDataGrid,
-  argTypes: {
-  }
+
 };
 
 export default meta;
@@ -24,17 +23,35 @@ const columns: ColumnSettings[] = [
 ];
 
 export const Basic: Story = {
-  argTypes: meta.argTypes,
+ 
   args: {
     columns: columns
   },
-  render: (args) => {
+  render: (args: any) => {
     return {
       components: { TPDataGrid },
       template: `
         <TPDataGrid :columns="columns" />
       `,
-      props: args,
+      props: ['columns'],
+    };
+  },
+};
+
+export const BasicWithSetup: Story = {
+ 
+  args: {
+    columns: columns
+  },
+  render: (args: any) => {
+    return {
+      components: { TPDataGrid },
+      setup(){
+        return { columns : args.columns}
+      },
+      template: `
+        <TPDataGrid :columns="columns" />
+      `,
     };
   },
 };
